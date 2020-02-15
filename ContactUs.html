@@ -4,3 +4,47 @@ contact us page
 login/register abbility
 flight saving
 etc. -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>ParaLogBook</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <div class="headMain">
+            Paragliding logbook!
+            
+            <a href="ParaLogBook.html" class="topbar" >Main</a>
+            <a href="ContactUs.html" class="topbar">Contact Us!</a>
+        </div>
+        <div class="class1">
+
+            <h2>Your flights:</h2>
+
+            <form onsubmit="addNewFlight(); return false;" style="color: #ccc;">
+                <input id="date1" type="date">
+                <input id="hours" type="number">
+                <input id="paraglider" type="datalist"> 
+                <input type="submit" value="Add"> <br/> <br/>
+            </form>
+
+            <p id="total"></p>
+
+            <table name="table" style="color: aliceblue;" border="1">
+                <th style="width: fit-content;">Date</th>
+                <th style="width: fit-content;">Hours</th> 
+                <th style="width: fit-content;">Paraglider</th>
+            </table>
+        </div>
+
+        <div class="topcorner">    
+            Language:
+            <a href="ParaLogBook_Ukr.html"><img style="width: 15px; height: 15px; border-radius: 10px;" src="Ukr.png" alt="Ua"></a>
+            <a href="ParaLogBook.html"><img style="width: 15px; height: 15px; border-radius: 10px" src="En.png" alt="En"></a>
+        </div>
+
+        <script src="pageScript.js"></script>
+        <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    </body>
+</html>
