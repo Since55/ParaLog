@@ -2,7 +2,7 @@
 var totalHours = 0;
 function setTotalHours(hours){
       var total = document.getElementById("total");
-      totalHours = totalHours + hours     ;
+      totalHours = totalHours + hours;
 
       total.innerHTML = "Total hours: " + totalHours; 
 }
