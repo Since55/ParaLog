@@ -16,6 +16,10 @@ function addNewFlight(){
       
       if( date == "" || hours == "" || paraglider == "" ){
             wrong.innerHTML = "Incorrect input!";
+      } else if (paraglider.length > 64){
+            wrong.innerHTML = "Enter max 64 symbols";
+      } else if (hours < 0){
+            wrong.innerHTML = "Duration can't be less than 0"; 
       } else {
             wrong.innerHTML = "";
             // get the html table

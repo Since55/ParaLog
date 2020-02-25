@@ -2,38 +2,45 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>ParaLogBook</title>
+        <title>ParaLog!</title>
         <link rel="stylesheet" type="text/css" href="style.css">
+
     </head>
     <body>
-        <div class="headMain">
-            Парапланерний Бортжурнал!
-        </div>
-        <div class="class1">
+        <header class="headMain">
+            ParaLog!
+            
+            <a href="index.html" class="topbar" style="border-bottom: 3px solid #393e46">Головна</a>
+            <a href="ContactUs.html" class="topbar">Контакт!</a>
+            
+            <div class="topcorner">    
+                Мова:
+                <a href="ParaLogBook_Ukr.html"><img style="width: 15px; height: 15px; border-radius: 10px;" src="Ukr.png" alt="Ua"></a>
+                <a href="index.html"><img style="width: 15px; height: 15px; border-radius: 10px" src="En.png" alt="En"></a>
+            </div>
+        </header>
+        <main class="class1">
 
             <h2>Ваші польоти:</h2>
 
-            <form onsubmit="addNewFlight(); return false;">
+            <form class="flightForm" onsubmit="addNewFlight(); return false;" style="color: #ccc;">
                 <input id="date1" type="date">
                 <input id="hours" type="number">
                 <input id="paraglider" type="datalist"> 
-                <input type="submit" value="Додати"> <br/> <br/>
+                <input type="submit" value="Add"> 
+                <p id="wrong" class="wrong"></p><br/> <br/>
             </form>
 
             <p id="total"></p>
 
-            <table name="table" style="color: aliceblue;" border="1">
+            <table name="table">
                 <th style="width: fit-content;">Дата</th>
-                <th style="width: fit-content;">Години</th> 
+                <th style="width: fit-content;">Час</th> 
                 <th style="width: fit-content;">Крило</th>
             </table>
-        </div>
+        </main>
 
-        <div class="topcorner">    
-            Мова:
-            <a href="ParaLogBook_Ukr.html"><img style="width: 15px; height: 15px; border-radius: 5px;" src="Ukr.png" alt="Ua"></a>
-            <a href="ParaLogBook.html"><img style="width: 15px; height: 15px; border-radius: 5px" src="En.png" alt="En"></a>
-        </div>
+        
 
         <script src="pageScript.js"></script>
         <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
