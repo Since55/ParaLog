@@ -12,10 +12,12 @@ function addNewFlight(){
       const date = document.getElementById('date1').value;
       const hours = +document.getElementById('hours').value;
       const paraglider = document.getElementById('paraglider').value;
+      const wrong = document.getElementById('wrong');
       
       if( date == "" || hours == "" || paraglider == "" ){
-            alert("Incorrect input!");
+            wrong.innerHTML = "Incorrect input!";
       } else {
+            wrong.innerHTML = "";
             // get the html table
             // 0 = the first table
             var table = document.getElementsByTagName('table')[0];

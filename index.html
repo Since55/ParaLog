@@ -10,7 +10,7 @@
         <header class="headMain">
             ParaLog!
             
-            <a href="index.html" class="topbar" style="border: 3px solid #393e46">Main</a>
+            <a href="index.html" class="topbar" style="border-bottom: 3px solid #393e46">Main</a>
             <a href="ContactUs.html" class="topbar">Contact Us!</a>
             
             <div class="topcorner">    
@@ -23,11 +23,12 @@
 
             <h2>Your flights:</h2>
 
-            <form onsubmit="addNewFlight(); return false;" style="color: #ccc;">
+            <form class="flightForm" onsubmit="addNewFlight(); return false;" style="color: #ccc;">
                 <input id="date1" type="date">
                 <input id="hours" type="number">
                 <input id="paraglider" type="datalist"> 
-                <input type="submit" value="Add"> <br/> <br/>
+                <input type="submit" value="Add"> 
+                <p id="wrong" class="wrong"></p><br/> <br/>
             </form>
 
             <p id="total"></p>
